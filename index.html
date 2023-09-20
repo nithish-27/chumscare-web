@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chumscare</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/logo.jpeg" rel="icon">
+  <!-- <link href="images/icon/" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+<style>
+  #hero{background-image: url("images/bg-new.jpg"); 
+    height: 100vh; 
+
+  }
+  .scroll-top{
+    justify-content:start;
+  }
+  @media only screen and (max-width: 924px) {
+     #hero{
+      background-image: url("images/bg-new-1.jpg");
+     }
+   }
+</style>
+
+ 
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <h1 href="./index.html"><span >Chumscare</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#chefs">Our Product</a></li>
+          <li><a href="#services">Our Uniqueness</a></li>
+          <li><a href="#book-a-table">Contact</a></li>   
+          <li class="dropdown"><a href="#"><span>Blogs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="./blog.html">Anion Sanitary Napkins</a></li>
+              <li><a href="./blog-2.html">Bamboo Sanitary Napkins</a></li>
+       
+              <li><a href="./blog-3.html">Herbal Sanitary Napkins</a></li>
+            </ul>
+          </li>
+       
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a class="btn-book-a-table" href="#book-a-table">Contact Us</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <!--  -->
+ 
+  <section id="hero" class=" container-fluid hero d-flex mx-auto align-items-center section-bg">
+   
+    <div class=" container"> 
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 style="color: white;"data-aos="fade-up">Is It Code <span style="color: red;">Red</span>?</h2>
+          <p style="color: white; "data-aos="fade-up" data-aos-delay="100">Have your worry-free and hygienic periods.
+            </p>
+          <div style="margin-left:-30px;" class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Love Moon Time</a>
+            <a href="https://www.youtube.com/watch?v=mj9LqiVpoIo" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span style="color: white;">Watch Video</span></a>
+          </div>
+          
+          <!-- <a class="bt-h"><i class="bi bi-arrow-up-short"></i></a> -->
+         
+        </div>
+  
+        <!-- <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img  src="images/img-b.jpg" class="img-h img-fluid" alt="girl achivement" data-aos="zoom-out" data-aos-delay="300">
+        </div> -->
+      </div>
+     
+    </div>
+    
+  </section><!-- End Hero Section -->
+ 
+			<!-- Button trigger modal -->
+
+
+<!-- Modal-1 -->
+
+           
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Order Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><br>
+      <form action="https://formspree.io/f/mkneojyj" method="post"  class="container php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="phoneNo" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input required name="No of packs"type="number" placeholder="no of packs" id="inputNoItem" class="form-control">
+            
+        </div>
+     
+        <input type="hidden" name="Product type" id="product" value="anion">
+         
+        </div>
+        <div style="margin-top:50px;" class="text-center">
+          <button style="margin-bottom: 10px;margin-left: -5px;border-color:#ff00ff ;"type="submit" class="btn-book-a-table">buy now</button>
+      </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+<!-- model-2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Order Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><br>
+      <form action="https://formspree.io/f/mkneojyj" method="post"  class="container php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="phoneNo" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input required name="No of packs"type="number" placeholder="no of packs" id="inputNoItem" class="form-control">
+            
+        </div>
+     
+        <input type="hidden" name="Product type" id="product" value="bamboo">
+         
+        </div>
+        <div style="margin-top:50px;" class="text-center">
+          <button style="margin-bottom: 10px;margin-left: -5px;border-color:#ff00ff ;"type="submit" class="btn-book-a-table">buy now</button>
+      </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+<!-- model 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">Order Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><br>
+      <form action="https://formspree.io/f/mkneojyj" method="post"  class="container php-email-form" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="phoneNo" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <input required name="No of packs"type="number" placeholder="no of packs" id="inputNoItem" class="form-control">
+            
+        </div>
+     
+        <input type="hidden" name="Product type" id="product" value="herbal">
+         
+        </div>
+        <div style="margin-top:50px;" class="text-center">
+          <button style="margin-bottom: 10px;margin-left: -5px;border-color:#ff00ff ;"type="submit" class="btn-book-a-table">buy now</button>
+      </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+ <!-- ======= service Section ======= -->
+ <section style="margin-top:-25px;" id="chefs" class="chefs section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="about-2 section bg-gray" id="about">
+        <div class=" container">
+            <div  style="margin-bottom: 90px;"class="row">
+                <div class="col-12 col-md-5 border-end ">
+                   
+
+                    <h2 class="text-center">Kinder to planet</h2><br>
+                </div>
+                <div class="col-12 col-md-7">
+                    <p>Your comfort and confidence at your time of the month with Chumscare is completely different.
+                        Enjoy your life as you always want with Chumscare</p>
+                </div><br>
+                
+            </div>
+        </div>   	
+    </div>   
+    
+      <div class="row gy-4">
+
+        <div style="margin-bottom:30px;"class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="images/services/1.png" class="img-fluid" alt="">
+              
+            </div>
+            
+            <div class="member-info">
+              <h4>ANION SANITARY NAPKINS</h4>
+             
+              <p><strong>Have you ever felt discomfort?</strong></p>
+              <P>Here Chumscare's Anion Sanitary Napkins reduce feminine discomfort. Wanna know more?
+            </p><br>
+              <div style="margin-top:40px;">
+              <a style="margin-left:-5px;"class="btn-book-a-table" href="./blog.html">LET'S START</a>
+              <a type="button" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+               Buy Now
+              </a> </div>
+        
+            </div>
+          </div>
+        </div><!-- End -->
+
+        <div style="margin-bottom:30px;" class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="images/services/2.png" class="img-fluid" alt="">
+              
+            </div>
+            <div class="member-info">
+            
+              <h4>BAMBOO ANION SANITARY NAPKIN</h4>
+              <p><strong>Feeling down on your Carrie?</strong></p>
+              
+              <p>Bamboo Anion Sanitary Napkins boost energy,strengthens immunity and increases metabolism. Learn more for your one's friend.
+            </p>
+              <div style="margin-top:30px;">
+                <a style="margin-left:-5px;"class="btn-book-a-table" href="./blog-2.html">CHECK-IN</a>
+                <a type="button" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#exampleModal2">Buy Now</a>
+              </div>
+            
+            </div>
+          </div>
+        </div><!-- End -->
+
+        <div style="margin-bottom:30px;" class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="images/services/3.png" class="img-fluid" alt="">
+            
+            </div>
+            <div class="member-info">
+                
+                
+                
+                
+              <h4>HERBAL SANITARY NAPKINS</h4>
+              <p><strong>Are you looking for a naturally hygienic?</strong></p>
+             
+              <p>Yeah! Chumscare's Herbal Sanitary Napkin, it's cool, comfortable, and natural.</p>
+              <div style="margin-top:30px;">
+                <a style="margin-left:-5px;"class="btn-book-a-table" href="./blog-3.html">NEED MORE COOL?</a>
+                <a type="button" class="btn-book-a-table" data-bs-toggle="modal" data-bs-target="#exampleModal3">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End -->
+
+      </div>
+
+    </div>
+  </section><!-- End  Section -->
+<!--
+Start About Section
+==================================== -->
+
+<section class="services section-xs" id="services">
+	<div class="container">
+        
+        <div class="section-header">
+            <h3><span>Love about Chumscare</span></h3>
+           <h7>Be a moon at your moon time</h7>
+          </div>
+
+		<div class="row">
+			<!-- Single Service Item -->
+			<div class="col-md-4 col-sm-6" >
+				<div class="service-block color-bg text-center">
+					<div class="service-icon text-center">
+                        <img style="width:60px;height:60px;" src="./images/icon/organic.png"></img>
+					</div>
+					<h3>100% Organic</h3>
+					
+				</div>
+			</div>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<div class="col-md-4 col-sm-6" >
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+                        <img style="width:60px;height:60px;" src="./images/icon/absorption.png"></img>
+					</div>
+					<h3>Superior Absorption</h3>
+					
+				</div>
+			</div>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<div class="col-md-4 col-sm-6 mx-auto"  >
+				<div class="service-block color-bg text-center">
+					<div class="service-icon text-center">
+                        <img style="width:60px;height:60px;" src="./images/icon/ph.png"></img>
+					</div>
+					<h3>Maintain PH Level</h3>
+					
+				</div>
+			</div>
+		</div> 	
+        	<div class="row">
+                <div class="col-md-4 col-sm-6" >
+                    <div class="service-block color-bg text-center">
+                        <div class="service-icon text-center">
+                            <img style="width:60px;height:60px;" src="./images/icon/rashes.png"></img>
+                        </div>
+                        <h3>Rashes free</h3>
+                        
+                    </div>
+                </div>
+                <!-- End Single Service Item -->
+                
+                <!-- Single Service Item -->
+                <div class="col-md-4 col-sm-6" >
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <img style="width:60px;height:60px;" src="./images/icon/layers.png"></img>
+                        </div>
+                        <h3>8 layer of sanitary pad</h3>
+                        
+                    </div>
+                </div>
+                <!-- End Single Service Item -->
+                
+                <!-- Single Service Item -->
+                <div class="col-md-4 col-sm-6 mx-auto"  >
+                    <div class="service-block color-bg text-center">
+                        <div class="service-icon text-center">
+                            <img style="width:60px;height:60px; " src="./images/icon/convenient.png"></img>
+                        </div>
+                        <h3>Comfort</h3>
+                        
+                    </div>
+                </div>
+            </div>
+	</div>   	
+</section>  
+			
+			
+    <!-- ======= Book A Table Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h3>Contact Us</h3>
+           
+          </div>
+  
+          <div class="row g-0">
+  
+            <div class="col-lg-4 reservation-img" style="background-image: url(images/bg.png);" data-aos="zoom-out" data-aos-delay="200"></div>
+  
+            <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            
+
+              <form action="https://formspree.io/f/mkneojyj" method="post"  class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" class="form-control" name="phoneNo" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input required name="No of packs"type="number" placeholder="no of packs" id="inputNoItem" class="form-control">
+                    
+                </div>
+                  
+                 
+                  <div class="col-lg-6 col-md-6">
+                    <label for="product">Select type</label><br><br>
+                <select required type="text" name="Product type" id="product" placeholder="product type"   class=" form-control  form-select " aria-label=".form-select-lg example">
+                    <!-- <option disabled="disabled" selected="selected" ><span style="color:gray">product type</span></option> -->
+                    <option >Anion</option>
+                    <option >Bamboo anion</option>
+                    <option >Herbal</option>
+                  </select>
+                  
+                </div>
+                
+                </div>
+                <div style="margin-top:50px;" class="text-center">
+                    <button type="submit" class="btn">buy now</button>
+                </div>
+                
+              </form>
+            </div><!-- End Reservation Form -->
+  
+          </div>
+  
+        </div>
+      </section><!-- End Book A Table Section -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4 style="color: #09942e;">Address</h4>
+
+            
+            
+           
+            
+            <p>
+                62, 2nd floor, Perumal building, Chithambara Nagar,<br>
+                PWD road, Nagercoil 629002<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4 style="color: #09942e;">Reservations</h4>
+            <p>
+              <strong>Phone:</strong>+91 9486678270<br>
+              <strong>Email:</strong>chumscare@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4 style="color: #09942e;">Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 9AM</strong> - 9PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4 style="color: #09942e;">Follow Us</h4>
+          <div class="social-links d-flex">
+          
+            <a href="https://www.facebook.com/Chumscare_official-54705732275576/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/chumscare_official?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bi bi-instagram"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright . All Rights Reserved
+      </div>
+      <div class="credits">
+    
+        Designed by <a style="color: #09942e;" href="https://techsnapie.com/">Techsnapie solutions</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+<div class="justify-content-start">
+  
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</div>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ 
+</body>
+
+</html>
